@@ -4,7 +4,8 @@ const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY,
 });
 
-const MODEL_NAME = "gemini-2.5-flash";
+// Gemini 2.5 Flash is unavailable to newly created API projects.
+const MODEL_NAME = "gemini-3.6-flash";
 
 const generateContent = async (prompt) => {
   try {
