@@ -6,7 +6,7 @@ import { errorHandler, notFoundHandler } from './middleware/error.middleware.js'
 
 const app = express();
 
-const clientUrl = process.env.CLIENT_URL || 'http://localhost:5173';
+const clientUrl = process.env.CLIENT_URL || 'http://localhost:5000';
 
 app.use(
   cors({
