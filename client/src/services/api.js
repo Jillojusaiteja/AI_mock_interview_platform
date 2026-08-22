@@ -10,10 +10,15 @@ import axios from 'axios';
 
 const API = axios.create({
 <<<<<<< HEAD
+<<<<<<< HEAD
   baseURL: import.meta.env.VITE_API_URL + '/api/'
 =======
   baseURL: process.env.VITE_API_URL+ '/api/'
 >>>>>>> dda1476 (Updated api)
+=======
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api"
+
+>>>>>>> 9b8e9fb (Updated client and server files)
 });
 
 // Attach JWT token to every request
